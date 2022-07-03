@@ -1,0 +1,131 @@
+body {
+    background-color:rgb(240, 235, 235);
+    
+}
+
+#navbar {grid-area: nav;}
+#Main_features {grid-area: main;}
+#Technical_Specifications {grid-area: specs;}
+#Compatibility {grid-area: comp;}
+#Arduino_Uno_Board_Anatomy {grid-area: anatomy;}
+#Controls {grid-area: controls;}
+#Reference_Sites {grid-area: ref;}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'nav main main main main main'
+    'nav specs specs specs specs specs'
+    'nav comp comp comp comp comp'
+    'nav anatomy anatomy anatomy anatomy anatomy'
+    'nav controls controls controls controls controls'
+    'nav ref ref ref ref ref';
+    padding: 10px;
+    max-width: 800px;
+}
+header {
+    text-align: center;
+    font-size: 24px;
+}
+.heading {
+    font-size: 18px;
+    text-decoration: underline;
+}
+.example {
+    font-weight: bold;
+}
+.nav-link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+nav {
+    position: sticky;
+    top: 10px;
+    padding-left: 0;
+}
+nav li {
+    list-style-type: none;
+}
+table {
+    border-collapse: collapse;
+}
+th, td:not(.tableIntro) {
+    text-align: left;
+    border: 1px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgray;
+}
+.tableIntro {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+code {
+    display: block;
+    max-width: 500px;
+    text-align: left; 
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    color: black;
+    background-color: lightgray;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        font-size: .75rem;
+    }
+    header {
+        font-size: 16px;
+    }
+    nav {
+        background-color: rgb(154, 209, 228);
+        z-index: 200;
+        top: 0%;
+        margin-bottom: 10px;
+        padding-left: 0%;
+    }
+    nav ul {
+        column-count: 2;
+        padding-bottom: 10px;
+        padding-left: 0%;
+    }
+    code {
+        color: rgb(30, 255, 0);
+        background-color: black;
+        z-index: 100;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .tableIntro, .heading {
+        font-size: 14px;
+    }
+    #navbar {grid-area: nav;}
+    #Main_features {grid-area: main;}
+    #Technical_Specifications {grid-area: specs;}
+    #Compatibility {grid-area: comp;}
+    #Arduino_Uno_Board_Anatomy {grid-area: anatomy;}
+    #Controls {grid-area: controls;}
+    #Reference_Sites {grid-area: ref;}
+    
+    .grid {
+        display: grid;
+        grid-template-areas:
+        'nav' 
+        'main'
+        'specs'
+        'comp'
+        'anatomy'
+        'controls'
+        'ref';
+    }
+}
